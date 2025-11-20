@@ -1,41 +1,31 @@
-# OOP Lab 1 — Data Processing
+# OOP Lab 4 — Data Processing
 
 ## Lab Overview
-This lab demonstrates transitioning from procedural to object-oriented programming in Python.  
-It uses classes to load, filter, and aggregate city temperature data from a CSV file.
+This lab is about working with databases and basic data analysis
 
 ## Project Structure
-oop_lab_1/
-│
-├── README.md # This file
-├── Cities.csv # Dataset containing city, country, and temperature
-└── data_processing.py # OOP-style code for data processing
+-'data_processing.py' - is the main code
+-'Cities.csv' - city data
+-'Countries.csv' - country data
 
 ## Design Overview
 
 ### **Class: DataLoader**
-- **Purpose:** Handles reading CSV files and returning data as a list of dictionaries.
-- **Methods:**
-  - `__init__(base_path=None)`: Sets up a base path for data files.
-  - `load_csv(filename)`: Loads a CSV file into a list of dictionaries.
+-loads csv file
+-return data as dict
 
-### **Class: Table**
-- **Purpose:** Represents tabular data and supports filtering and aggregation.
-- **Attributes:**
-  - `name`: Table name.
-  - `table`: A list of dictionaries (rows).
-- **Methods:**
-  - `filter(condition)`: Returns a new `Table` containing only rows that meet a lambda condition.
-  - `aggregate(func, key)`: Applies a function (like `sum`, `max`, or `len(set())`) on a specific key.
+### Table
+-Method:
+ -'filter()' - filter rows
+ -'aggregate()' -calculate avg,min,max of temp
+ -join()' -join tables
 
-## How to Test and Run
-1. Place `Cities.csv` and `data_processing.py` in the same directory.
-2. Run the program:
-   ```bash
-   python data_processing.py
-3. Observe the console output:
-    Average temperature of all cities
-    Cities in Germany and Spain 
-    Number of unique countries
-    Average temperature for Germany
-    Maximum temperature for Italy
+### DB
+-Methods:
+ -'insert()' -insert table to database
+ -'search()' -find table by name
+
+### How to test an run
+1.Place all files in the same directory
+2.Run 'data_processing.py'
+3.get the result
