@@ -1,4 +1,4 @@
-# OOP Lab 4 — Data Processing
+# OOP Lab 3 — Data Processing
 
 ## Lab Overview
 This lab is about working with databases and basic data analysis
